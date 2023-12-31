@@ -20,7 +20,10 @@
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                <div class="website-counter"></div> 
+                <div class="website-counter">
+                    <a href="https://www.hitwebcounter.com" target="_blank">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=10537936&style=0009&nbdigits=3&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
+                </div> 
             </nav>
             <div class="header-text" id="h">
                 <h1 class="waviy">Hey, I'm <br>
@@ -214,24 +217,6 @@
         sidemenu.style.left = "0px";
         wav.style.visibility = "hidden";
     }
-
-  </script>
-
-    <!-- page visit counter -->
-  <script>
-    var counterContainer = document.querySelector(".website-counter");
-    var visitCount = localStorage.getItem("page_view");
-
-    // Check if page_view entry is present
-    if (visitCount) {
-    visitCount = Number(visitCount) + 1;
-    localStorage.setItem("page_view", visitCount);
-    } 
-    else {
-    visitCount = 1;
-    localStorage.setItem("page_view", 1);
-    }
-    counterContainer.innerHTML = visitCount;
 
   </script>
 
