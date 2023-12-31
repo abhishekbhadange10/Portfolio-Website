@@ -76,7 +76,7 @@ nav ul li a:hover::after{
 .website-counter {
     height: 30px;
     width: 50px;
-    margin: 13px 180px;
+    margin: 13px 300px;
     padding: 4px 8px;
     color: white;
     border-radius: 30px;
@@ -499,7 +499,7 @@ nav .fa-solid{
     }
 
     .website-counter {
-        margin: auto 300px;
+        margin: auto 250px;
         color: white;
         font-weight: 600;
         font-size: 20px;
