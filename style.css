@@ -73,6 +73,16 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.website-counter {
+    height: 30px;
+    width: 50px;
+    margin: 13px 180px;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+  }
 
 .header-text{
 margin-top: 8%;
@@ -487,6 +497,13 @@ nav .fa-solid{
     nav .fa-solid.fa-bars{
         position: fixed ;
     }
+
+    .website-counter {
+        margin: auto 330px;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+      }
 
     .sub-title{
         font-size: 30px;
