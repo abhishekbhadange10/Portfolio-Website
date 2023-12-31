@@ -20,6 +20,7 @@
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div class="website-counter"></div> 
             </nav>
             <div class="header-text" id="h">
                 <h1 class="waviy">Hey, I'm <br>
@@ -213,6 +214,24 @@
         sidemenu.style.left = "0px";
         wav.style.visibility = "hidden";
     }
+
+  </script>
+
+    <!-- page visit counter -->
+  <script>
+    var counterContainer = document.querySelector(".website-counter");
+    var visitCount = localStorage.getItem("page_view");
+
+    // Check if page_view entry is present
+    if (visitCount) {
+    visitCount = Number(visitCount) + 1;
+    localStorage.setItem("page_view", visitCount);
+    } 
+    else {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+    }
+    counterContainer.innerHTML = visitCount;
 
   </script>
 
